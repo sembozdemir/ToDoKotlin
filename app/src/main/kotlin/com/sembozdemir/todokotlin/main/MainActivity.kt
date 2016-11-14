@@ -1,4 +1,4 @@
-package com.sembozdemir.todokotlin
+package com.sembozdemir.todokotlin.main
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

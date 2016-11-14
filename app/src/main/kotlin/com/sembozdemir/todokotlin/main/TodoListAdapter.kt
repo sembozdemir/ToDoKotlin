@@ -1,4 +1,4 @@
-package com.sembozdemir.todokotlin
+package com.sembozdemir.todokotlin.main
 
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
