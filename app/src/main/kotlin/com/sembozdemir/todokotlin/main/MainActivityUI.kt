@@ -1,10 +1,9 @@
 package com.sembozdemir.todokotlin.main
 
-import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
-import android.widget.LinearLayout
 import com.sembozdemir.todokotlin.extensions.asString
 import com.sembozdemir.todokotlin.extensions.clear
+import com.sembozdemir.todokotlin.extensions.defaultDivider
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 
@@ -15,7 +14,7 @@ class MainActivityUI(val todoListAdapter: TodoListAdapter) : AnkoComponent<MainA
             recyclerView {
                 val orientation = LinearLayoutManager.VERTICAL
                 layoutManager = LinearLayoutManager(ctx, orientation, false)
-                addItemDecoration(DividerItemDecoration(ctx, LinearLayout.VERTICAL))
+                defaultDivider()
                 adapter = todoListAdapter
             }.lparams(width = matchParent,
                     height = dip(0),
